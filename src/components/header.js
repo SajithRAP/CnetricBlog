@@ -2,31 +2,23 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import LogoImg from "../images/rap-logo-dark.png"
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header>
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        width: 1170,
+        maxWidth: '90%',
+        padding: `0`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+      <div class="LogoContainer">
+        <Link to="/" >
+          <img src={LogoImg} alt="Rapid Acceleration Partners"/>
         </Link>
-      </h1>
+      </div>
     </div>
   </header>
 )

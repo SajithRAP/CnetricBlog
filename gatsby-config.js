@@ -5,6 +5,17 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        // baseUrl: `http://cnetric.local/`,
+        // protocol: `http`,
+        baseUrl: `https://blog.rapidautomation.ai/`,
+        protocol: `https`,
+        hostingWPCOM: false,
+        useACF: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

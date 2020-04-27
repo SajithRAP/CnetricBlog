@@ -1,0 +1,51 @@
+.post-page {
+    padding: 0 20%;
+}
+.post-page h2,
+.post-page h3,
+.post-page h4,
+.post-page h5,
+.post-page h6 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.post-page .post-image img {
+    margin: 50px 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.15);
+}
+
+.post-page .wp-block-image,
+.post-page .wp-block-image figure,
+.post-page .wp-block-image img {
+    margin-bottom: 0;
+}
+
+.post-page .post-category {
+    color: #3ea9f5;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.post-page .post-title {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+.post-page .post-title:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 80px;
+    height: 3px;
+    margin-left: -40px;
+    bottom: 0;
+    background: #fc5546;
+}

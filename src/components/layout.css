@@ -5,6 +5,7 @@ html {
 }
 body {
   margin: 0;
+  background-color: #f7f7f7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -61,7 +62,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-size: 2em;
+  font-size: 2.875rem;
   margin: 0.67em 0;
 }
 mark {
@@ -385,6 +386,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  color: #627792;
 }
 figure {
   margin-left: 0;
@@ -615,6 +617,43 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+/* own css */
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 0px none #000000;
+  border-bottom: 0px none #000000;
+  border-left: 0px none #000000;
+  /* background-color: rgba(255, 255, 255, 0.85); */
+  padding-top: 30px;
+  padding-right: 0px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  color: #627792;
+
+}
+header {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 10px 60px;
+}
+
+header a {
+  display: inline-block;
+}
+header img {
+  max-width: 90px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  vertical-align: middle;
+  object-fit: contain;
+}
+header .LogoContainer {
+  padding: 15px 0;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
