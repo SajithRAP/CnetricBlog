@@ -28,23 +28,27 @@ export default ({ data }) => {
   )
 }
 
-export const pageQuery = graphql`
-  query {
-    allWordpressPost(sort: { fields: [date] }) {
-      edges {
-        node {
-          title
-          excerpt
-          slug
-          categories {
+export const pageQuery = (
+  graphql`
+    query pageQuery {
+      allWordpressPost(
+        sort: { order: ASC, fields: [date] }
+      ){
+        edges {
+          node {
+            title
+            excerpt
             slug
-          }
-          featured_media {
-            source_url
-            alt_text
+            categories {
+              slug
+            }
+            featured_media {
+              source_url
+              alt_text
+            }
           }
         }
       }
     }
-  }
-`
+  `
+)

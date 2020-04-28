@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Rapid Acceleration Partners`,
+    description: `The story of Artificial Intelligence transforming businesses is quite promising. However, most organizations are exploring narrow applications of AI, or restricting it to a single business process. Predictions state that AI will generate a revenue of $13 trillion in the coming decade, so it is the ideal time for companies to capitalize on AI technology`,
+    author: `@sajith`,
   },
   plugins: [
     {
