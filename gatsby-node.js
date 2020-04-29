@@ -19,6 +19,13 @@ exports.createPages = ({ graphql, actions }) => {
             featured_media {
               source_url
               alt_text
+              localFile {
+                childImageSharp {
+                  fluid {
+                    originalImg
+                  }
+                }
+              }
             }
           }
         }

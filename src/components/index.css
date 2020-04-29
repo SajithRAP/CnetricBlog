@@ -25,6 +25,9 @@
     margin-bottom: 1.45rem;
     box-shadow: 0 10px 60px rgba(0, 0, 0, 0.12);
     transition: all 0.2s ease-in-out 0s;
+    min-width: 100%;
+    min-height: 163px;
+    background-color: rgba(0, 0, 0, 0.12);
 }
 
 .Blog_col:hover img {
@@ -94,4 +97,16 @@
 }
 .Links a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 1023px) {
+    .Blog_col {
+        width: 49%;
+    }   
+}
+
+@media only screen and (max-width: 575px) {
+    .Blog_col {
+        width: 100%;
+    }   
 }
