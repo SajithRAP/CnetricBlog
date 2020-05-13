@@ -6,7 +6,15 @@ exports.createPages = ({ graphql, actions }) => {
   return graphql(`
     query pageQuery {
       allWordpressPost(
-        sort: { order: ASC, fields: [date] }
+        sort: { order: ASC, fields: [date] },
+        filter: { 
+          categories: {
+            elemMatch: {
+              name: {ne: "In The News"}
+            }
+          },
+          slug: { ne: "null" } 
+        }
       ){
         edges {
           node {

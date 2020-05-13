@@ -14,6 +14,13 @@ module.exports = {
         protocol: `https`,
         hostingWPCOM: false,
         useACF: true,
+        excludedRoutes: [
+          "**/options/options",
+          "**/form",
+          "**/users",
+          "**/settings",
+          "**/themes",
+        ],
       },
     },
     `gatsby-plugin-react-helmet`,

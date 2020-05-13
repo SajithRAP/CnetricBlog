@@ -35,7 +35,6 @@ const PostsPage = ({ pageContext }) => {
                 <p class="post-header">{node.title}</p>
                 <div class="post-content" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
               </Link>
-              {console.log(node)}
             </div>
           ))}
         </div>
